@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contacto</title>
+  </head>
+
+  <body style="font-family: Arial; margin: 0; background: darkblue">
+    <!-- HEADER -->
+    <header style="background: white; padding: 20px; text-align: center">
+      <figure style="display: inline-block; margin: 10px">
+        <img src="../img/logos/logo.png" alt="logo" width="60" />
+      </figure>
+      <div style="display: inline-block; margin: 10px; text-align: left">
+        <h3 style="margin: 0">Tu Catálogo Aquí</h3>
+
+        <p style="margin: 0">Tu tienda digital en un solo enlace</p>
+      </div>
+
+      <a href="../index.html" style="margin: 10px; color: darkblue"> Inicio </a>
+
+      <a href="catalogo.html" style="margin: 10px; color: darkblue">
+        Catálogo
+      </a>
+
+      <a href="login.html" style="margin: 10px; color: darkblue"> Admin </a>
+      <a href="#" style="margin: 10px; color: darkblue"> Contacto </a>
+    </header>
+
+    <!-- MAIN -->
+    <main style="padding: 30px">
+      <!-- PRESENTACIÓN -->
+      <section style="text-align: center; margin-bottom: 40px">
+        <h1 style="color: white">Contáctanos</h1>
+
+        <p style="color: white;">
+          ¿Tienes preguntas sobre nuestros productos o servicios? Escríbenos y
+          te responderemos lo antes posible.
+        </p>
+      </section>
+
+      <!-- FORMULARIO -->
+      <section
+        style="
+          background: white;
+          width: 60%;
+          margin: auto;
+          padding: 30px;
+          border-radius: 10px;
+        "
+      >
+        <form action="#" method="post">
+          <!-- Nombre -->
+          <label for="nombre"> Nombre completo </label>
+
+          <br /><br />
+
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingrese su nombre"
+            required
+            style="width: 95%; padding: 10px"
+          />
+
+          <br /><br />
+
+          <!-- Correo -->
+          <label for="correo"> Correo electrónico </label>
+
+          <br /><br />
+
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="correo@ejemplo.com"
+            required
+            style="width: 95%; padding: 10px"
+          />
+
+          <br /><br />
+
+          <!-- Teléfono -->
+          <label for="telefono"> Número de teléfono </label>
+
+          <br /><br />
+
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="0999999999"
+            style="width: 95%; padding: 10px"
+          />
+
+          <br /><br />
+
+          <!-- Motivo -->
+          <label for="motivo"> Motivo de contacto </label>
+
+          <br /><br />
+
+          <select id="motivo" name="motivo" style="width: 98%; padding: 10px">
+            <option>Información</option>
+            <option>Soporte</option>
+            <option>Compras</option>
+            <option>Sugerencias</option>
+          </select>
+
+          <br /><br />
+
+          <!-- Mensaje -->
+          <label for="mensaje"> Mensaje </label>
+
+          <br /><br />
+
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="6"
+            placeholder="Escriba su mensaje..."
+            style="width: 95%; padding: 10px"
+          ></textarea>
+
+          <br /><br />
+
+          <!-- Checkbox -->
+          <input type="checkbox" id="terminos" />
+
+          <label for="terminos"> Acepto los términos y condiciones </label>
+
+          <br /><br /><br />
+
+          <!-- Botón -->
+          <button
+            type="submit"
+            style="
+              padding: 12px;
+              width: 100%;
+              background: darkblue;
+              color: white;
+              border: none;
+            "
+          >
+            Enviar mensaje
+          </button>
+        </form>
+      </section>
+
+      <!-- INFORMACIÓN -->
+      <aside style="text-align: center; margin-top: 40px; color: white">
+        <h3>Información de contacto</h3>
+
+        <p>Santo Domingo de los Tsáchilas - Ecuador</p>
+
+        <!-- WhatsApp -->
+        <p>
+          <a
+            href="https://wa.me/593996494273"
+            target="_blank"
+            style="color:white; text-decoration: none"
+          >
+            WhatsApp: +593 99 649 4273
+          </a>
+        </p>
+
+        <!-- Correo -->
+        <p>
+          <a
+            href="mailto:tucatalogoaqui@gmail.com"
+            style="color: white; text-decoration: none"
+          >
+            tucatalogoaqui@gmail.com
+          </a>
+        </p>
+
+        <!-- Facebook -->
+        <p>
+          <a
+            href="https://www.facebook.com/estefany.brioness/?locale=es_LA"
+            target="_blank"
+            style="color: white; text-decoration: none"
+          >
+            Facebook
+          </a>
+        </p>
+
+        <!-- Instagram -->
+        <p>
+          <a
+            href="https://www.instagram.com/ruuth.estefany/"
+            target="_blank"
+            style="color: white; text-decoration: none"
+          >
+            Instagram
+          </a>
+        </p>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      style="
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      "
+    >
+      <p>© 2026 Tu Catálogo Aquí</p>
+    </footer>
+  </body>
+</html>
