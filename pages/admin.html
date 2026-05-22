@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/logos/LOGO-removebg-preview.png" type="image/png">
-    
+    <link
+      rel="icon"
+      href="../img/logos/LOGO-removebg-preview.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <title>Dashboard Básico</title>
   </head>
 
@@ -21,12 +29,13 @@
 
         <p style="margin: 0">Tu tienda digital en un solo enlace</p>
       </div>
-
-      <a href="catalogo.html" style="color: darkblue; margin: 10px">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <!-- Carrito -->
+      <a href="catalogo.html" style="color: darkblue; margin: 10px" title="Catalogo Demo">
         Catalogo
       </a>
-
-      <a href="../index.html" style="color: red; margin: 10px">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      <a href="../index.html" style="color: red; margin: 10px" title="Cerrar Sesion">
         Cerrar Sesion
       </a>
     </header>
@@ -34,7 +43,13 @@
     <main style="padding: 30px">
       <!-- Estadísticas -->
       <section
-        style="text-align: center; background-color: darkblue; padding: 50px"
+        style="
+          padding: 50px;
+          text-align: center;
+          background: darkblue;
+          margin: 30px;
+          border-radius: 12px;
+        "
       >
         <h2 style="color: white">Dashboard</h2>
 
@@ -46,6 +61,7 @@
             padding: 20px;
             width: 200px;
             display: inline-block;
+            border-radius: 12px;
             margin: 10px;
           "
         >
@@ -61,6 +77,7 @@
             width: 200px;
             display: inline-block;
             margin: 10px;
+            border-radius: 12px;
           "
         >
           <h3>Unidades en stock</h3>
@@ -75,6 +92,7 @@
             width: 200px;
             display: inline-block;
             margin: 10px;
+            border-radius: 12px;
           "
         >
           <h3>P. destacados</h3>
@@ -89,6 +107,7 @@
             width: 200px;
             display: inline-block;
             margin: 10px;
+            border-radius: 12px;
           "
         >
           <h3>Valor del inventario</h3>
@@ -102,6 +121,7 @@
         <h2>Acciones rápidas</h2>
 
         <button
+          title="Gestionar los productos"
           style="
             padding: 10px;
             margin: 10px;
@@ -113,11 +133,24 @@
           Gestionar Productos
         </button>
 
-        <button style="padding: 10px; margin: 10px">Configurar Negocio</button>
+        <button
+          title="Configura las opciones de tu negocio"
+          style="padding: 10px; margin: 10px"
+        >
+          Configurar Negocio
+        </button>
 
-        <button style="padding: 10px; margin: 10px">Ver Mi Catálogo</button>
+        <button
+          title="Ver tu catálogo público"
+          style="padding: 10px; margin: 10px"
+        >
+          Ver Mi Catálogo
+        </button>
 
-        <button style="padding: 10px; margin: 10px">
+        <button
+          title="Comparte tu catálogo con otros"
+          style="padding: 10px; margin: 10px"
+        >
           Compartir Mi Catálogo
         </button>
       </section>
@@ -137,77 +170,155 @@
           "
         >
           <tr style="background: #f5f5f5">
+            <th style="padding: 15px; border: 1px solid #dcdcdc">Id</th>
             <th style="padding: 15px; border: 1px solid #dcdcdc">Producto</th>
-
             <th style="padding: 15px; border: 1px solid #dcdcdc">Precio</th>
-
             <th style="padding: 15px; border: 1px solid #dcdcdc">Stock</th>
+            <th style="padding: 15px; border: 1px solid #dcdcdc">Imagen</th>
+            <th style="padding: 15px; border: 1px solid #dcdcdc">Calidad</th>
           </tr>
 
           <tr>
+            <td style="padding: 15px; border: 1px solid #dcdcdc">1</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Vestido Elegante Floral
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$49.99</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">20</td>
+            <td><img src="../img/productos/vestidofloral.png" alt="Vestido Floral" width="100" /></td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="80" max="100" style="width: 100px;"></progress></td>
           </tr>
 
           <tr>
+            <td style="padding: 15px; border: 1px solid #dcdcdc">2</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Blusa Casual Blanca
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$22.00</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">35</td>
+            <td><img src="../img/productos/blusacasual.png" alt="Blusa Blanca" width="100" /></td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="60" max="100" style="width: 100px;"></progress></td>
           </tr>
 
           <tr>
+            <td style="padding: 15px; border: 1px solid #dcdcdc">3</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Vestido Largo de Fiesta
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$45.00</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">12</td>
+            <td><img src="../img/productos/vestidofiesta.png" alt="Vestido Largo" width="100" /></td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="70" max="100" style="width: 100px;"></progress></td>
           </tr>
 
           <tr>
+            <td style="padding: 15px; border: 1px solid #dcdcdc">4</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Blusa Oversize Moderna
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$18.00</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">28</td>
+            <td><img src=" ../img/productos/blusamoderna.png" alt="Blusa Moderna" width="100"</td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="50" max="100" style="width: 100px;"></progress></td>
           </tr>
 
           <tr>
+            <td style="padding: 15px; border: 1px solid #dcdcdc">5</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Falda Plisada Beige
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$25.00</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">18</td>
+            <td><img src="../img/productos/faldaplisada.png" alt="Falda Plisada" width="100" /></td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="60" max="100" style="width: 100px;"></progress></td>
           </tr>
 
           <tr>
+              <td style="padding: 15px; border: 1px solid #dcdcdc">6</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Vestido Casual Primavera
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$32.49</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">25</td>
+            <td><img src="../img/productos/vestidoprimavera.png" alt="Vestido Casual" width="100" /></td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="80" max="100" style="width: 100px;"></progress></td>
           </tr>
 
           <tr>
+            <td style="padding: 15px; border: 1px solid #dcdcdc">7</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Blusa Satinada Premium
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$15.00</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">15</td>
+            <td><img src="../img/productos/blusasatinada.png" alt="Blusa Satinada" width="100" /></td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="90" max="100" style="width: 100px;"></progress></td>
           </tr>
 
           <tr>
+            <td style="padding: 15px; border: 1px solid #dcdcdc">8</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">
               Chaqueta Denim Urbana
             </td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">$20.00</td>
             <td style="padding: 15px; border: 1px solid #dcdcdc">10</td>
+            <td><img src="../img/productos/chaqueta.png" alt="Chaqueta Denim" width="100" /></td>
+            <td style="border: 1px solid #dcdcdc;"><progress value="70" max="100" style="width: 100px;"></progress></td>
           </tr>
         </table>
+      </section>
+
+      <section
+        style="
+          padding: 30px;
+          text-align: center;
+          background: darkblue;
+          margin: 30px;
+          border-radius: 12px;
+          color: white;
+        "
+      >
+        <p>Ventas del Mes:</p>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          "
+        >
+          <progress
+            value="80"
+            max="100"
+            style="width: 60%; accent-color: green"
+          ></progress>
+
+          <span>80%</span>
+        </div>
+
+        <br />
+
+        <hr />
+        <p>Cantidad de Ventas Fallidas:</p>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          "
+        >
+          <meter
+            value="80"
+            min="0"
+            max="100"
+            style="width: 60%"
+            title=" 80% de las ventas fueron exitosas, 20% fallidas"
+          ></meter>
+          <span>80%</span>
+        </div>
       </section>
     </main>
 
