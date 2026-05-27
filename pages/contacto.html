@@ -16,33 +16,36 @@
   </head>
 
   <body style="font-family: Arial; margin: 0; background: darkblue">
-    <!-- HEADER -->
-    <header style="background: white; padding: 20px; text-align: center">
-      <figure style="display: inline-block; margin: 10px">
-        <img src="../img/logos/logo.png" alt="logo" width="60" />
-      </figure>
-      <div style="display: inline-block; margin: 10px; text-align: left">
-        <h3 style="margin: 0">Tu Catálogo Aquí</h3>
+    <header>
+      <nav style="background: white; padding: 20px; text-align: center">
+        <figure style="display: inline-block; margin: 10px">
+          <img src="../img/logos/logo.png" alt="logo" width="60" />
+        </figure>
+        <div style="display: inline-block; margin: 10px; text-align: left">
+          <h3 style="margin: 0">Tu Catálogo Aquí</h3>
 
-        <p style="margin: 0">Tu tienda digital en un solo enlace</p>
-      </div>
+          <p style="margin: 0">Tu tienda digital en un solo enlace</p>
+        </div>
 
-      <i class="fa-solid fa-house"></i>
-      <!-- Casa -->
-      <a href="../index.html" style="margin: 10px; color: darkblue"> Inicio </a>
+        <i class="fa-solid fa-house"></i>
+        <!-- Casa -->
+        <a href="../index.html" style="margin: 10px; color: darkblue">
+          Inicio
+        </a>
 
-      <i class="fa-solid fa-cart-shopping"></i>
-      <!-- Carrito -->
-      <a href="catalogo.html" style="margin: 10px; color: darkblue">
-        Catálogo
-      </a>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <!-- Carrito -->
+        <a href="catalogo.html" style="margin: 10px; color: darkblue">
+          Catálogo
+        </a>
 
-      <i class="fa-solid fa-user"></i>
-      <!-- Usuario -->
-      <a href="login.html" style="margin: 10px; color: darkblue"> Admin </a>
-      <i class="fa-solid fa-phone"></i>
-      <!-- Teléfono -->
-      <a href="#" style="margin: 10px; color: darkblue"> Contacto </a>
+        <i class="fa-solid fa-user"></i>
+        <!-- Usuario -->
+        <a href="login.html" style="margin: 10px; color: darkblue"> Admin </a>
+        <i class="fa-solid fa-phone"></i>
+        <!-- Teléfono -->
+        <a href="#" style="margin: 10px; color: darkblue"> Contacto </a>
+      </nav>
     </header>
 
     <!-- MAIN -->
@@ -145,7 +148,7 @@
           <br /><br />
 
           <!-- Checkbox -->
-          <input type="checkbox" id="terminos" />
+          <input type="checkbox" id="terminos" name="terminos" required />
 
           <label for="terminos"> Acepto los términos y condiciones </label>
 
@@ -166,8 +169,8 @@
           </button>
         </form>
       </section>
-      
-      <br><br>
+
+      <br /><br />
 
       <section
         style="
@@ -176,33 +179,37 @@
           margin: auto;
           padding: 30px;
           border-radius: 10px;
-          color: border-left: auto;;
         "
       >
-        <details style="margin-top: 40px">
-          <summary>Preguntas frecuentes</summary>
+        <h3>Preguntas frecuentes</h3>
+        <details style="margin-top: 10px">
+          <summary>
+            ¿Cuánto tiempo tarda en responder el equipo de soporte?
+          </summary>
           <p style="margin-top: 20px">
-            <strong
-              >¿Cuánto tiempo tarda en responder el equipo de soporte?</strong
-            >
-            <br />
             Normalmente respondemos dentro de las 24 horas hábiles.
           </p>
+        </details>
+        <hr />
 
+        <details style="margin-top: 10px">
+          <summary>¿Puedo solicitar una devolución?</summary>
           <p>
-            <strong>¿Puedo solicitar una devolución?</strong>
-            <br />
             Sí, ofrecemos devoluciones dentro de los 30 días posteriores a la
             compra.
           </p>
+        </details>
+        <hr />
 
+        <details style="margin-top: 10px">
+          <summary>¿Cómo puedo actualizar mi información de contacto?</summary>
           <p>
-            <strong>¿Cómo puedo actualizar mi información de contacto?</strong>
-            <br />
             Puedes actualizar tu información de contacto en tu perfil de usuario
             o contactándonos directamente.
           </p>
         </details>
+
+        <hr />
       </section>
 
       <!-- INFORMACIÓN -->
@@ -274,15 +281,15 @@
 
     <!-- FOOTER -->
     <footer
-      style="
-        background: black;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-      "
+      style="background: #333; color: white; text-align: center; padding: 20px"
     >
-      <p>© 2026 Tu Catálogo Aquí</p>
+      <p>&copy; 2024 Tu Catálogo Aquí. Todos los derechos reservados.</p>
+
+      <p>
+        Síguenos en
+        <a href="#" style="color: white">Facebook</a>,
+        <a href="#" style="color: white">Instagram</a>
+      </p>
     </footer>
   </body>
 </html>
